@@ -14,11 +14,11 @@ entry_points:
         type: str
 
       output_type:
-        description: type of the output artifact
+        description: type of output artifact
         type: str
 
       output_description:
-        description: description of the output artifact
+        description: description of output artifact
         type: str
 
       min_price:
