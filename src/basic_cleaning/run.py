@@ -25,7 +25,7 @@ def go(args):
     artifact_path = artifact.file()
 
     logger.info("Reading dataframe")
-    df = pd.read_parquet(artifact_path)
+    df = pd.read_csv(artifact_path)
 
     logger.info("Preprocessing: turn last_review into datetime, limit price range")
     df['last_review'] = pd.to_datetime(df['last_review'])
